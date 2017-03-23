@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+        <title>
+            Time of new life 你的新世界
+        </title>
+        <link href="task7.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript">
+        // section3部分高度自适应问题；
+        			function wrap_resize(){
+		        			var height1=document.getElementById("illustration2").height;
+		        			var height2=document.getElementById("illustration3").height;
+		        			var section3_describe_wrap1=document.getElementsByClassName('section3_describe_wrap')[0];
+		        			var section3_describe_wrap2=document.getElementsByClassName('section3_describe_wrap')[1];
+		        			section3_describe_wrap1.style.height=height1+"px";
+		        			section3_describe_wrap2.style.height=height2+"px";
+        			}
+        		window.onresize=function(){
+        			wrap_resize();
+        		}
+        		window.onload=function(){
+        			wrap_resize();
+        		}
+        </script>
+    </head>
+    <body>
+    		<header>
+    		 		<img src="images/task_7-header.jpg" width="90" height="50" title="新世界" />
+    		 		<span class="header_left"><a href="http://www.baidu.com" title="Time of new life">新世界</a></span>
+    		 		<div class="header_right">
+    		 				<ul>
+    		 				<li>首页</li>
+    		 				<li>最新活动</li>
+    		 				<li>项目介绍</li>
+    		 				<li>爱心社区</li>
+    		 				<li>关于我们</li>
+    		 				<li id="sign_in">
+    		 					<img src="images/task_7-sign-in.jpg"/>
+    		 					<span>登录</span>
+    		 				</li>
+    		 			</ul>
+    		 		</div>
+    		</header>
+    		<main>
+    		<!-- 插图1 -->
+    			<div class="illustration1">
+    				<div id="pic1">
+    					<img src="images/task_7-illustration1.jpg"/>
+    				</div>
+    				<!-- 插图上的描述 -->
+    				<div class="depiction">
+    					<h1>Time of new life</h1>
+    					<h2>新时代，年轻的人们让我们一起体验新生活，享受新生活</h2>
+    					<a href="http://ife.baidu.com" title="新世界">开始体验</a>
+    				</div>
+
+		<!-- 插图页尾的描述 -->
+    				<div class="illustration1_footer">
+    					<div class="icon">
+    						<img src="images/task_7-icon1.jpg"/>
+    						<p>打造全新世界观，让你更<br/>爱你的生活</p>
+    					</div>    					
+    					<div class="icon">
+    						<img src="images/task_7-icon2.jpg"/>
+    						<p>丰富多彩的公益活动，发<br/>挥新世界的主人公意识</p>
+    					</div>    					
+    					<div class="icon">
+    						<img src="images/task_7-icon3.jpg"/>
+    						<p>时尚的新理念，超前体验<br/>未知的生活</p>
+    					</div>    					
+    					<div class="icon">
+    						<img src="images/task_7-icon4.jpg"/>
+    						<p>完善的培养机制，培养你<br/>全新的世界观</p>
+    					</div>
+    				</div>
+    			</div>
+
+    			<!-- 关于新世界你不知道的还有什么 -->
+    			<section class="section2">
+    				<div class="section2_header">
+    					<p> <img src="images/task_7-icon5.jpg" width="170" height="120"/> </p>
+    					<p>关于新世界，你不知道的还有什么？</p>
+    				</div>
+
+    				<!-- 搜索栏 -->
+    				<div class="section2_research">
+    					<div class="section2_research_header">
+    						<h1>查找新世界城市活动信息</h1>
+    						<h2>每个城市有不同的活动信息，请自主查询你所需要了解的城市</h2>
+    					</div>
+					<div class="section2_research_main">
+						<form method="get" action="">
+							<select name="country" >
+								<option value="中国" class="tip">中国</option>
+							</select>
+
+							<select name="province" >
+								<option value="" class="tip">省份</option>
+								<option value="北京市">北京市</option>
+								<option  value="天津市">天津市</option>
+								<option  value="湖北省">湖北省</option>
+								<option  value="广东省">广东省</option>
+								<option  value="江苏省">江苏省</option>
+								<option  value="辽宁省">辽宁省</option>
+							</select>
+
+							<select name="city" >
+								<option value="" class="tip">城市</option>
+								<option value="南京">南京</option>
+								<option value="苏州">苏州</option>
+							</select>
+							<input type="submit" name="research" value="搜索" />
+						</form>
+
+					</div>
+    				</div>
+    				<!-- 北京 上海等地的活动 -->
+
+    				<div class="activity">
+    					<span></span>
+					<div class="activity_item"  id="beijing">
+							 <div class="image_wrap"><img src="images/task_7-beijing.jpg"></div>
+							 <div class="content_wrap">
+							 			<h1>北京活动</h1>
+							 			<p>新社区大联盟</p>
+							 </div >
+					</div>
+					<div class="activity_item"  id="shanghai">
+							<div class="content_wrap">
+										<h1>上海活动</h1>
+										<p>夜上海景观探索</p>
+							</div >
+							<div class="image_wrap"> <img src="images/task_7-shanghai.jpg"></div>
+					</div>
+					<div class="activity_item"  id="shenzhen">
+							<div class="image_wrap"> <img src="images/task_7-shenzhen.jpg"></div>
+							<div class="content_wrap">
+										<h1>深圳活动</h1>
+										<p>全新海岸线观景点站</p>
+							</div >
+					</div>
+					<div class="activity_item"  id="hongkong">
+							<div class="image_wrap"> <img src="images/task_7-hongkong.jpg"></div>
+							<div class="content_wrap">
+										<h1>香港活动</h1>
+										<p>奢侈消费大派送</p>
+							</div >
+					</div>
+    				</div>
+    			</section>
+
+    			<!-- 插图2 -->
+
+    			<section class="section3">
+    					<div class="section3_describe_wrap">
+						<div id="illustration2_wrap" >
+    						<img src="images/task_7-illustration2.jpg"  width="100%" id="illustration2" />
+    							<span></span>
+    						</div>    						
+    						<div id="section3_describe1">
+    							<div class="section3_describe_content">		
+    								<h1>新世界/1</h1>
+    								<p>新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界</p> 
+    								<div class="button_wrap">
+    									<button>更多详情</button>
+    									<div class="span_wrap">
+    										<span class="checked"></span>
+    										<span></span>
+    										<span></span>
+    									</div>
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="section3_describe_wrap">
+    						<div id="section3_describe2">
+    							<div class="section3_describe_content">
+    								<h1>新时代<br/>关于爱生活的我们</h1>
+    								<span></span>
+    								<div class="button_wrap">
+    									<button>查看更多</button>
+    								</div>    								
+    							 </div>
+    						</div>
+    					
+    						<div id="section3_describe3">
+    							<div class="section3_describe_content">
+    								<h1>新时代<br/>关于爱生活的我们</h1>
+    								<span></span>
+    								<div class="button_wrap">
+    									<button>查看更多</button>
+    								</div>    								
+    							 </div>
+    						</div>
+
+						<div id="illustration3_wrap" >
+							<img src="images/illustration3.jpg" width="100%" id="illustration3" />
+							<span></span>
+						</div>
+    					</div>
+    			</section>
+
+<!-- 加入我们 -->
+    			<section class="section4">
+    				<div class="header">
+    					<h1>成为我们的志愿者</h1>
+    					<span></span>
+    					<p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情<br/>
+    					那就不要犹豫，快来加入我们，成为改变所有人生活的人 </p> 
+				    					</div>
+				<div class="aside_wrap">
+					<div class="aside1">
+						<div id="part1">
+							<h1>新世界志愿者协议</h1>
+							<p>加入新世界志愿者的人员必须遵守中华人民共共和国的相关法律法规，并且本着平等资源的原则 ......</p>
+							<div class="more"><div><span></span>more</div></div>
+						</div>
+						<div id="part2">
+							<h1>新世界志愿者权利</h1>
+							<p>新世界志愿者享受新世界内部所有资源共享的权利，并且享受所在四新世界活动的优先参与资格</p>
+							<div class="more"><div><span></span>more</div></div>
+						</div>
+						<div id="part3">
+							<h1>更多条款</h1>
+							<div class="more"><div><span></span>more</div></div>
+						</div>
+					</div>
+					<div class="aside2">
+						<form action="" method="get">
+							<span>姓名：<input type="text" name="volunteer"></span>
+							<span>年龄：<input type="text" name="volunteer"></span>
+							<span>联系方式：<input type="text" name="volunteer"></span>
+							<span>联系地址：<input type="text" name="volunteer"></span>
+							<span class="textarea">请简单描绘一下你的生活：<input type="textarea" name="volunteer"></span>
+							<input type="submit" name="volunteer" value="提交申请">
+						</form>
+					</div>
+				</div>
+			</section>
+				
+    		</main>
+
+    		<!-- 网页底部 -->
+    		<footer>
+    			<div class="footer_content">
+    				<h1>联系我们</h1>
+    				<p>为了更好的获取我们的最新产品资讯，您可以留下你的电子邮箱快速订阅我们的产品资讯<br/>也可以通过以下任何方式关注我们的动态。</p>
+    				<form action="" method="get">
+    					<input type="text" name="mail" placeholder="someone@email.com"  class="text" /><input type="submit" name="mail" value="提交"  class="submit" />
+    				</form>
+    				
+    							<div  class="footer_icon_wrap">
+    								<a href="http://im.qq.com"><span><img src="images/qq.png"/></span></a>
+    								<a href="http://weibo.com/"><span><img src="images/weibo.png"/></span></a>
+    								<a href="javascript:;"><span><img src="images/twitter.png"/></span></a>
+    								<a href="javascript:;"><span><img src="images/msn.png"/></span></a>
+    							</div>
+
+    			</div>
+
+			<div class="pageFooter clearfix">
+				<a href="http://ife.baidu.com" target="_blank"><span class="pageFooter_left ">@2016新世界</span></a>
+				<a href="#"><span class="pageFooter_right">Back to top</span></a>
+			</div>
+    		</footer>
+    </body>
+</html>
